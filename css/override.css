@@ -1,0 +1,240 @@
+.psdiw-wrap {
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+    color:white;
+    overflow: hidden;
+
+}
+h2{
+	text-align: center;
+    font-family: .HelveticaNeueDeskInterface-Regular;
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 43px;
+    margin-bottom:30px;
+}
+#magic{
+    background: url("../img/opa.png");
+    color:white;
+    height: 235px;
+}
+.side{
+    
+    float:right;
+    margin-bottom:50px;
+    padding:20px;
+}
+
+.skip {
+    float: right;
+    clear: both;
+}
+
+h6 {
+    text-align: center;
+    margin-top:-120px;
+        font-family: .HelveticaNeueDeskInterface-Regular;
+        font-size: 24px;
+        color: #FFFFFF;
+        line-height: 28px;
+}
+
+
+.skip a {
+    
+    color:white;
+    
+}
+.sheet-1{
+    
+    display: none;
+
+
+}
+
+
+.sheet-2,.sheet-3,.sheet-4,.sheet-5 {
+    
+    padding:30px;
+    display: none;   
+    clear: both;
+    
+}
+.sheet-3{
+    
+
+  display: block;
+
+
+}
+
+
+.sheet-2 select{
+  
+  width: 40%;
+  margin: 50px auto 0px;
+  display: block;
+  height: 40px;
+  color:black;
+  padding:5px;
+  overflow: hidden;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+background: url("../img/dropdown.png") no-repeat 98% center #ffffff !important;
+   border: #ccc 1px solid;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+
+    
+   }
+
+select option {
+  
+padding:5px;
+
+}
+
+.next{
+    
+    background: url("../img/next.png") no-repeat;
+    cursor: pointer;
+    float: right;
+    top: -125px;
+    right: -45px;
+    clear: both;
+
+}
+
+.pre{
+    background: url("../img/back.png") no-repeat;
+    cursor: pointer;
+    float: left;
+    top: -125px;
+    left: -50px;
+}
+
+
+.next,.pre{
+	position: relative;
+	width: 66px;
+	height: 66px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=range] {
+
+  -webkit-appearance: none;
+  width: 700%;
+  margin: 8.55px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2.9px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: rgba(255, 255, 255, 0.99);
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(1, 1, 1, 0);
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 49, 0), 0px 0px 0px rgba(0, 0, 75, 0);
+  border: 1.8px solid rgba(0, 0, 0, 0);
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #ff7d39;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8.75px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.99);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2.9px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: rgba(255, 255, 255, 0.99);
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(1, 1, 1, 0);
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 49, 0), 0px 0px 0px rgba(0, 0, 75, 0);
+  border: 1.8px solid rgba(0, 0, 0, 0);
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #ff7d39;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 2.9px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(176, 176, 176, 0.99);
+  border: 0.2px solid rgba(1, 1, 1, 0);
+  border-radius: 2.6px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.99);
+  border: 0.2px solid rgba(1, 1, 1, 0);
+  border-radius: 2.6px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 49, 0), 0px 0px 0px rgba(0, 0, 75, 0);
+  border: 1.8px solid rgba(0, 0, 0, 0);
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #ff7d39;
+  cursor: pointer;
+  height: 2.9px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.99);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.99);
+}
+
+.select-3 {
+  
+  background:green;
+ 
+}
+
+.lol {
+  background: red;
+  margin:10px;
+}
+
