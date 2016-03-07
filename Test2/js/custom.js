@@ -36,7 +36,7 @@ function shuffle(array) {
 
 function magicThingy(){
 
-var arr=[0,1,2,3];
+var arr=[0,1,3];
 var arr1=shuffle(arr);
 arr1.push(4)
 console.log(arr1);
@@ -65,38 +65,40 @@ $('.optionr').on("click",function(){
 });
 
 $(".submi").on("click",function(){
-
+$('#message').hide();
 var fname=$('#fname').val();
 var num=$('#num').val();
 								
 										if(fname==""){
-
-														alert("Please enter your name");
-														$("#fname").addClass("alert");
+														alert("Enter your name");
+													// $('#message').text("Please enter your name").show().addClass("animated fadeIn");
 
 										} 
 										else if(num=="") {
-															alert("Please enter your number");
+												
+														// $('#message').text("Please enter soemthing?").show().addClass("animated fadeIn");
 											
-
+																alert("Enter a message");
 										}
 										else {
 
-													 if($("#num").val().length==10) {
-
+													 // if($("#num").val().length==10) {
+													 
 													 	putInfo();
 													 	hawasChipao();
 													 	$('.sheet-6').show().addClass('animated fadeIn');
 													 	$('.pre').hide();
 													 	$('.nav').hide();
 													 	$('.side').hide();
+
+
 													 	
 
 
-													 }
-													 else {
-													 	alert("please enter 10 digit number only");
-													 }
+													 // }
+													 // else {
+													 // 	$('#message').text("Please enter a valid number(10 digit)").show().addClass("animated fadeIn");
+													 // }
 														
 														
 										}
@@ -133,6 +135,7 @@ add();
 var arw=magicThingy();
 var state=arw[0];
 check();
+var b;
 
 function add(){
 			if(arw[state]>=0 && arw[state]<=6) {
@@ -182,8 +185,13 @@ else if(arw[arv]==1) {
 }
 else if(arw[arv]==2){
 
-	
-	hawasChipao();
+		// check();
+
+
+	  // b=arv-1;  
+	  hawasChipao();
+      add();
+      check();
 
 		$('.sheet-3').show();
 		$('.sheet-3').addClass('animated slideInUp fadeIn');
@@ -306,7 +314,7 @@ var imp=$('.option.selected').text();
 var type=$('.optionr.selected').text();
 var fname=$('#fname').val();
 var num=$('#num').val();
-var ref = new Firebase("https://landingwa.firebaseio.com/mainthingy");
+var ref = new Firebase("https://landingwa.firebaseio.com/testing1");
 
 				    ref.push({
 				      Budget: bud,

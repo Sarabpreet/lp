@@ -1,0 +1,508 @@
+/* Fonts */
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/Gotham-Book.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Gotham-Book.woff') format('woff'), /* Modern Browsers */ url('../fonts/Gotham-Book.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Gotham-Book.svg#7510147900d23fa3ad697e74bf146ea2') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: url('../fonts/Gotham-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Gotham-Black.woff') format('woff'), /* Modern Browsers */ url('../fonts/Gotham-Black.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Gotham-Black.svg') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */ url('../fonts/Gotham-Medium.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Gotham-Medium.svg') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../fonts/Gotham-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Gotham-Light.woff') format('woff'), /* Modern Browsers */ url('../fonts/Gotham-Light.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Gotham-Light.svg') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham XLight';
+    src: url('../fonts/Gotham-XLight.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Gotham-XLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Gotham-XLight.woff') format('woff'), /* Modern Browsers */ url('../fonts/Gotham-XLight.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Gotham-XLight.svg') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */ url('../fonts/Gotham-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Gotham-Bold.svg#6a327a217ddd10461b1acdc4d224fee0') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'BLOKKRegular';
+    src: url('../fonts/BLOKKRegular.eot');
+    src: url('../fonts/BLOKKRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/BLOKKRegular.woff') format('woff'), url('../fonts/BLOKKRegular.svg#BLOKKRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body iframe {
+    position: absolute;
+}
+
+/* Common css */
+.ta-center {
+    text-align: center;
+}
+
+.mg-top-10 {
+    margin-top: 10px;
+}
+
+.mg-top-20 {
+    margin-top: 20px;
+}
+
+.mg-top-30 {
+    margin-top: 30px;
+}
+
+.mg-top-40 {
+    margin-top: 40px;
+}
+
+/* psdiw-wrap */
+.psdiw-wrap {
+    background: url("../../img/campaignv3/bg_psdiw_image.jpg") no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+.usp-text {
+    padding-top: 10px;
+    padding-left: 35px;
+}
+
+.psdiw-header {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family: "Gotham Book";
+}
+
+.psdiw-list {
+    list-style-type: none;
+}
+
+.psdiw-usps {
+    color: #FFFFFF;
+    font-size: 20px;
+    /*font-family: "Gotham Book";*/
+    font-family: "Gotham Light";
+}
+
+.psdiw-form-head {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: "Gotham Book";
+    text-align: center;
+}
+
+.psdiw-form-btn {
+    background-color: #FF7B47;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    margin-left: -55px;
+}
+
+#contactFormTelephone_m {
+    width: 100%;
+}
+
+.pd-left-10 {
+    padding-left: 10px;
+}
+
+.pd-left-8 {
+    padding-left: 8px;
+}
+
+.mg-top-15 {
+    margin-top: 15px;
+}
+
+.psdiw-inp {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: "Gotham Book";
+    font-size: 18px;
+    color: #666666;
+    width: 80%;
+    border: none;
+    padding: 5px;
+    height: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+}
+
+.psdiw-inp-mobno {
+    float: left;
+    margin-left: -5px;
+    width: 90%;
+}
+
+.psdiw-content {
+    margin-top: 40px;
+}
+
+.psdiw-meter-title {
+    color: #333333;
+    font-size: 24px;
+    font-family: "Gotham Light";
+}
+
+.psdiw-meter-tag {
+    color: #666666;
+    font-size: 24px;
+    font-family: "Gotham Bold";
+    margin-left: 10px;
+}
+
+.psdiw-stat {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.psdiw-cool-coll {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.psdiw-params h3 {
+    color: #999999;
+    font-size: 23px;
+    font-family: "Gotham Light";
+    margin-bottom: 0px;
+}
+
+.psdiw-params p {
+    color: rgba(102, 102, 102, 0.71);
+    font-family: "Gotham Bold";
+    font-size: 12px;
+}
+
+.stat-mg {
+    border-right: 1px solid #999999;
+}
+
+.psdiw-collection {
+    font-family: "Gotham Bold";
+    font-size: 30px;
+    color: #3A3A3A;
+}
+
+.psdiw-slash {
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+}
+
+.psdiw-bike-img {
+    width: 94%;
+    position: absolute;
+}
+
+.psdiw-bike-desc {
+    color: #FFFFFF;
+    height: 292px;
+    width: 300px;
+    position: relative;
+}
+
+.psdiw-img-text-wrap {
+    position: absolute;
+    left: 0px;
+    /*top: 100px;*/
+    bottom: 55px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 94%;
+}
+
+.psdiw-bike-desc h3 {
+    font-size: 22px;
+    /*border-bottom: 1px solid #FFFFFF;*/
+}
+
+.cool-coll {
+    margin-bottom: 20px;
+}
+
+.psdiw-mob-cards {
+    margin: 0px auto;
+}
+
+.bike-slick {
+    margin-top: 15px;
+}
+
+.mob-bike-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.mob-bike-card h4 {
+    font-size: 14px;
+}
+
+.psdiw-mob-name {
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    /*top: 100px;*/
+    bottom: 0px;
+    width: 236px;
+    margin-left: 3px;
+}
+
+.dspl-none {
+    display: none;
+}
+
+.psdiw-bike-desc a {
+    color: #FFFFFF;
+}
+
+/* For Mobile  */
+@media screen and (max-width: 480px) {
+    /* Common */
+    .m-mg-left-0 {
+        margin-left: 0px;
+    }
+
+    .usp-text {
+        padding-top: 5px;
+    }
+
+    /* Post diwali */
+    .psdiw-title {
+        margin-top: 20px;
+    }
+
+    .psdiw-header {
+        font-size: 20px;
+    }
+
+    .psdiw-content {
+        margin-top: 0px;
+    }
+
+    .usp-text {
+        font-size: 16px;
+    }
+
+    .usp-pic {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .psdiw-form-title {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    .psdiw-form-btn {
+        margin-left: 0px;
+    }
+
+    .m-psdiw-form-btn {
+        color: #FFFFFF;
+        border: none;
+        background-color: #FF7B47;
+        padding: 10px 30px;
+    }
+
+    .m-psdiw-inp {
+        border: none;
+        width: 100%;
+        border-bottom: 1px solid #666;
+        height: 30px;
+    }
+
+    #book_test_form {
+        padding: 10px;
+    }
+
+    .psdiw-meter-title {
+        font-size: 18px;
+    }
+
+    .psdiw-meter-tag {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    .psdiw-params h3 {
+        font-size: 17px;
+    }
+
+    .psdiw-params p {
+        font-size: 9px;
+    }
+
+    .psdiw-stat-det {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .psdiw-fix1 {
+        margin-bottom: 13px;
+    }
+
+    .psdiw-cool-coll {
+        font-size: 18px;
+    }
+
+    .mg-top-30 {
+        margin-top: 15px;
+    }
+
+    .txt1 {
+        margin-top: 10px;
+    }
+
+    .thank-screen-m {
+        margin-bottom: 30px;
+    }
+
+    .bike-slick {
+        margin-bottom: 40px;
+    }
+}
+
+/* For Mobile Landscape and Tab */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .psdiw-form-btn {
+        margin-left: 0px;
+    }
+
+    .m-psdiw-form-btn {
+        color: #FFFFFF;
+        border: none;
+        background-color: #FF7B47;
+        padding: 15px;
+    }
+
+    .m-psdiw-inp {
+        border: none;
+        width: 80%;
+        border-bottom: 1px solid #666;
+    }
+
+    .psdiw-mob-name {
+        margin-left: 32px;
+    }
+
+}
+
+/* For Tab Landscape */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* For Laptop Screen Start */
+@media screen and (min-width: 1025px) and (max-width: 1919px) {
+    .psdiw-form-head {
+        width: 530px;
+    }
+
+    .psdiw-bike-desc h3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .psdiw-bike-desc h4 {
+        font-size: 13px;
+    }
+
+    .psdiw-bike-cards {
+        margin-right: 0px;
+    }
+
+    .psdiw-first-bike {
+        margin-left: 0px;
+    }
+
+    .psdiw-bike-desc {
+        height: 237px;
+        width: 215px;
+    }
+}
+
+/* For large screen start */
+@media screen and (min-width: 1920px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .psdiw-form-title {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 28px;
+    }
+
+    .psdiw-form-btn {
+        width: 172px;
+        margin-left: -66px;
+    }
+
+    .psdiw-form-head {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        padding-top: 20px;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #ffffff;
+        border-width: 3px;
+    }
+}
+
+/* For placeholder color */
+::-webkit-input-placeholder {
+    color: #666;
+}
+
+:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #666;
+}
+
+.thank-screen, .thank-screen-m {
+    padding-top: 30px;
+}

@@ -65,38 +65,40 @@ $('.optionr').on("click",function(){
 });
 
 $(".submi").on("click",function(){
-
+$('#message').hide();
 var fname=$('#fname').val();
 var num=$('#num').val();
 								
 										if(fname==""){
-
-														alert("Please enter your name");
-														$("#fname").addClass("alert");
+													
+													$('#message').text("Please enter your name").show().addClass("animated fadeIn");
 
 										} 
 										else if(num=="") {
-															alert("Please enter your number");
+												
+														$('#message').text("Please enter soemthing?").show().addClass("animated fadeIn");
 											
 
 										}
 										else {
 
-													 if($("#num").val().length==10) {
-
+													 // if($("#num").val().length==10) {
+													 
 													 	putInfo();
 													 	hawasChipao();
 													 	$('.sheet-6').show().addClass('animated fadeIn');
 													 	$('.pre').hide();
 													 	$('.nav').hide();
 													 	$('.side').hide();
+
+
 													 	
 
 
-													 }
-													 else {
-													 	alert("please enter 10 digit number only");
-													 }
+													 // }
+													 // else {
+													 // 	$('#message').text("Please enter a valid number(10 digit)").show().addClass("animated fadeIn");
+													 // }
 														
 														
 										}
@@ -306,7 +308,7 @@ var imp=$('.option.selected').text();
 var type=$('.optionr.selected').text();
 var fname=$('#fname').val();
 var num=$('#num').val();
-var ref = new Firebase("https://landingwa.firebaseio.com/mainthingy");
+var ref = new Firebase("https://landingwa.firebaseio.com/testing1");
 
 				    ref.push({
 				      Budget: bud,

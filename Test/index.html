@@ -157,14 +157,19 @@
 <h6>Share your details, for expert recommendations</h6>
 
 <input type="text" class="fn" id="fname" placeholder="Full Name"> 
+<!-- 
+<input type="number" class="nm" id="num" placeholder="Number"  pattern="\d{3}[\-]\d{3}[\-]\d{4}" required onkeyup="checkw(); return false;"> -->
 
-<input type="number" class="nm" id="num" placeholder="Number"  pattern="\d{3}[\-]\d{3}[\-]\d{4}" required onkeyup="checkw(); return false;">
+<textarea name="" id="num" cols="30" rows="10" class="nm" id="num" placeholder="Review"></textarea>
 
-<span id="message"></span>
+<div id="message"></div>
 
  <a href="#" class="buy submi"> Submit</a>
        
-  
+<!--   
+<input type="text" id="userid">
+<textarea name="user" id="review" cols="30" rows="10" placeholder="i liked the first one better..."></textarea>
+ -->
 </div>
 
     </div>
@@ -172,12 +177,21 @@
  
     <div class="sheet-6 box">
 <div class="three">
-<h6>Thanks, got it!</h6>
-<p>You’ll hear from us within next 48 hours.</p>
-      <a href="#" class="buy"> Browse bikes of your preference</a>
+<h6>Thanks for your valuable time.</h6>
+
+<!-- <p>You’ll hear from us within next 48 hours.</p>
+      <a href="#" class="buy"> Browse bikes of your preference</a> -->
        
   
 </div>
+
+<style> 
+.sheet.box .three h6 {
+
+    margin-top: 80px;
+}
+
+</style>
 
     </div>
 

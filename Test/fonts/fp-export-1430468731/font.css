@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('Gotham-Black.eot'); /* IE9 Compat Modes */
+  src: url('Gotham-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Gotham-Black.woff') format('woff'), /* Modern Browsers */
+       url('Gotham-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Gotham-Black.svg#0b358a21b3e426ee0635cfc34eab6e7e') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
