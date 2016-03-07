@@ -8,6 +8,7 @@
     padding-bottom: 0px;
     color:white;
     overflow: hidden;
+    min-height: 1vh;
 
 }
 h2{
@@ -19,8 +20,10 @@ h2{
     margin-bottom:30px;
 }
 #magic{
-    background: url("../img/opa.png");
+  background: url("../img/opa.png");
   padding:0px;
+  overflow: hidden;
+  min-height: 100vh;
 }
 
 .left{
@@ -46,25 +49,25 @@ line-height: 25px;
 
 .side{
     
-    float:right;
-     margin:10px 15px;
+float: right;
+margin: 6px 15px;
+clear: both;
+}
+
+.skip {      
+   position:relative;
+  display: block;
+   top:-20px;
+right:20px;
+   
+    margin-top: -10px;
+    text-align: right;
     clear: both;
+   
 
 }
 
-.skip {
-  position: relative;
-  margin-right: 40px;
-  text-align:right;
-  clear: both;  
-  top:35px;
-
-}
-
-  .sheet-3 .skip{
-    
-    top:0px;
-  }
+  
   
 
 h6 {
@@ -73,9 +76,8 @@ h6 {
         font-size: 24px;
         color: #FFFFFF;
         line-height: 28px;
-
         margin-top: 10px;
-margin-bottom: 8px;
+        margin-bottom: 8px;
   
 
 }
@@ -83,10 +85,10 @@ margin-bottom: 8px;
 
 .skip a {
     
-    color:white;
+  color:white;
   text-decoration: underline;
   font-weight: bolder;
-    
+     
 }
 
 
@@ -109,19 +111,17 @@ text-align: center;
     clear: both;
     
 }
-.side{
-  
-  padding:10px;
-}
 
 
 h6 {
   
-margin-top: 10px;
-        margin-bottom: 20px;}
+       margin-top: 10px;
+        margin-bottom: 20px;
+}
 
 .sheet-3 h6,.sheet-4 h6{
-margin-bottom: 45px;
+margin-bottom: 30px;
+
 
 }
 
@@ -234,6 +234,7 @@ margin:5px auto 20px;
 	width: 57px;
 	height: 48px;
   top:-135px !important;
+  z-index: 1000;
   
 }
 
@@ -387,12 +388,6 @@ margin: 10px;
 
 
 
-.three {
-  width: 60%;
-margin: -20px auto;
-  
-}
-
 .sheet-5,.sheet-6{
   text-align: center;
   margin-top:60px;
@@ -468,11 +463,7 @@ width: 28%;
   text-align: center;
 }
 
-.sheet-5 .three {
-  display: block;
-  position: relative;
-  top:-20px;
-}
+
 a.submi {
   
   display: block;
@@ -502,26 +493,32 @@ a:hover.submi{
 
 @media only screen and (max-width: 500px) {
 
-  .sheet-2 select{
-    font-size: 12px;
-   width: 60%;
-    
+  .logo img{
+    width: 70px;
+    height: 40px;
   }
   
-.psdiw-mob-name {
+  .sheet-2 select{
+    font-size: 12px;
+   width: 90%;
+    margin:  0 auto;
+    
+  }
 
-  display: none;
-} 
-
-  
+  .skip {
+    position: absolute;
+     
+  }
 
 h2{
 
 font-family: .HelveticaNeueDeskInterface-Regular;
-font-size: 18px;
+font-size: 14px;
 color: #FFFFFF;
-line-height: 21px;
-}
+  margin: 0px;
+  padding: 0px;
+  
+  }
 
 #magic h6 {
 
@@ -536,17 +533,21 @@ line-height: 21px;
 
   
 }
+  .three {
+  }
+  
   .nav {
-
-  width: 90%;
+  width: 100%;
   margin:0 auto;
   background: #FF7D39;
-  overflow: hidden;
+  
   height: 45px;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
   border-radius: 0px 0px 10px 10px;
   padding:0px 50px;
-  
+  position: fixed;
+  bottom: 0%;
+    z-index: 999;
 }
 
 .next{
@@ -579,17 +580,8 @@ line-height: 21px;
     font-size: 12px;
    
   }
-.skip{
 
-  margin:0px;
-  top: 15px;
-  padding: 0px;
-  margin-right:80px;
-}
-    .skip a {
-    font-size: 12px;
-    
-  }
+
 
 .left,.right{
 
@@ -616,24 +608,19 @@ line-height: 21px;
   }
   
   .sheet-3.box {
-    margin: -190px;
     padding-bottom: 640px;
-   padding-left: 120px;
+   padding-left: 60px;
   }
   .sheet-3.box h6{
 margin-left:-120px;
     
   }
-  .sheet-3.box .skip {
-    top:30px;
-    right:150px; 
-  }
   ul li.option {
   
-    padding:20px 0px;
-    width: 60%;
-    margin:5px auto !important;
-    padding: 10px;
+    // padding:20px 0px;
+    // width: 60%;
+    // margin:5px auto !important;
+    // padding: 10px;
     font-size: 12px;
 
     
@@ -642,14 +629,24 @@ margin-left:-120px;
     padding-right:10px;
   }
   
+.option {
+
+  padding-top: 10px;
+height: 55px;
+width: 210px;
+font-size: 12px;
+display: block;
+margin: 7px auto 3px 60px;
+
+}
   
 .optionsS .optionr{
-  padding-top:10px;
-  height: 55px;
-  width: 210px;
-  font-size: 12px;
-  display: block;
-  margin:5px auto;
+padding-top: 10px;
+height: 55px;
+width: 210px;
+font-size: 12px;
+display: block;
+margin: 7px auto 3px 60px;
   
 }
 .sheet-4.box {
@@ -662,15 +659,19 @@ margin-bottom: 30px;
 }
 
   input.fn {
-   min-width: 100px;
-    padding: 10px;
-    margin:10px auto 10px;
+min-width: 90%;
+padding: 10px;
+margin: 10px auto 10px;
   }
+
+
   input.nm{
-     min-width: 100px;
-    margin:0px auto 10px;
-        padding: 10px;
+min-width: 90%;
+padding: 10px;
+margin: 10px auto 10px;
   }
+
+  
   .submi {
     padding:10px;
     height: 30px;
@@ -703,6 +704,8 @@ textarea {
   color:black;
   padding:5px;
   font-size: 14px;
+  min-width:90%;
+padding: 10px;
 
 }
 

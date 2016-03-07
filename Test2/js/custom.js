@@ -217,7 +217,8 @@ else if(arw[arv]==4){
 	
 		$('.sheet-5').show();
 		$('.sheet-5').addClass('animated slideInUp fadeIn');
-		// $( ".next" ).addClass( "trans");
+		// $( ".next" ).addClass( "trans");	
+		$('.nav').hide();
 
 
 
@@ -314,15 +315,15 @@ var imp=$('.option.selected').text();
 var type=$('.optionr.selected').text();
 var fname=$('#fname').val();
 var num=$('#num').val();
-var ref = new Firebase("https://landingwa.firebaseio.com/testing1");
+var ref = new Firebase("https://landingwa.firebaseio.com/testing2");
 
 				    ref.push({
 				      Budget: bud,
 				      Age: age,
-				      Important:imp,
 				      Type:type,
 				      Name:fname,
-				      Number:num
+				      Number:num,
+				      timestamp:Firebase.ServerValue.TIMESTAMP
 				  });
 				    console.log("sent was ok");
 

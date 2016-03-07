@@ -316,7 +316,8 @@ var ref = new Firebase("https://landingwa.firebaseio.com/testing1");
 				      Important:imp,
 				      Type:type,
 				      Name:fname,
-				      Number:num
+				      Number:num,
+				      timestamp:Firebase.ServerValue.TIMESTAMP
 				  });
 				    console.log("sent was ok");
 
