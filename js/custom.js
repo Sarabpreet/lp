@@ -45,11 +45,74 @@ return arr1;
 
 }
 
+var count=0;var c=0;
+$('.option').on("click",function(){
+	console.log("hello");
+	if(($(".option.selected").length<=2) || ($(".option.selected").length==0)){
+	$(this).toggleClass("selected");
+	}
+	else {		
+		$(this).removeClass("selected");
+	}
+});
+
+
+$('.optionr').on("click",function(){
+
+	$('.optionr').removeClass("selected");
+	$(this).addClass("selected");
+
+});
+
+$(".submi").on("click",function(){
+
+var fname=$('#fname').val();
+var num=$('#num').val();
+								
+										if(fname==""){
+
+														alert("Please enter your name");
+														$("#fname").addClass("alert");
+
+										} 
+										else if(num=="") {
+															alert("Please enter your number");
+											
+
+										}
+										else {
+
+													 if($("#num").val().length==10) {
+
+													 	putInfo();
+													 	hawasChipao();
+													 	$('.sheet-6').show().addClass('animated fadeIn');
+													 	$('.pre').hide();
+													 	$('.nav').hide();
+													 	$('.side').hide();
+													 	
+
+
+													 }
+													 else {
+													 	alert("please enter 10 digit number only");
+													 }
+														
+														
+										}
+
+
+			
+
+			});
+
+
+
 var arv=0;
 
 $('.pre').on("click",function(){
 remove();
-console.log(state);
+// console.log(state);
 });
 
 
@@ -134,7 +197,7 @@ else if(arw[arv]==3){
 	hawasChipao();
 		$('.sheet-4').show();
 		$('.sheet-4').addClass('animated slideInUp fadeIn');
-		wow(1);
+
 		// $( ".next" ).removeClass( "trans");
 
 }	
@@ -223,73 +286,14 @@ function hawasChipao(){
 
 // form controls 
 
-$(".submi").on("click",function(){
-
-var fname=$('#fname').val();
-var num=$('#num').val();
-								
-										if(fname==""){
-
-														alert("Please enter your name");
-														$("#fname").addClass("alert");
-
-										} 
-										else if(num=="") {
-															alert("Please enter your number");
-											
-
-										}
-										else {
-
-													 if($("#num").val().length==10) {
-
-													 	putInfo();
-													 	hawasChipao();
-													 	$('.sheet-6').show().addClass('animated fadeIn');
-													 	$('.pre').hide();
-													 	$('.nav').hide();
-													 	$('.side').hide();
-													 	
-
-
-													 }
-													 else {
-													 	alert("please enter 10 digit number only");
-													 }
-														
-														
-										}
-
-
-			
-
-			});
 
 
 
 
 
 
-// function wow(x){
 
-var count=0;var c=0;
-$('.option').on("click",function(){
-	console.log("hello");
-	if(($(".option.selected").length<=2) || ($(".option.selected").length==0)){
-	$(this).toggleClass("selected");
-	}
-	else {		
-		$(this).removeClass("selected");
-	}
-});
-// }
 
-$('.optionr').on("click",function(){
-
-	$('.optionr').removeClass("selected");
-	$(this).addClass("selected");
-
-});
 
 
 
