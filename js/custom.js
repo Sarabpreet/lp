@@ -5,8 +5,47 @@
 // $(".sheet-2").show();
 // });
 
-var important={};
-var type="";
+
+
+
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+}
+
+function magicThingy(){
+
+var arr=[0,1,2,3];
+var arr1=shuffle(arr);
+arr1.push(4)
+console.log(arr1);
+
+return arr1;
+
+}
+
+var arv=0;
 
 $('.pre').on("click",function(){
 remove();
@@ -28,25 +67,29 @@ add();
 // console.log(state);
 
 });
-
-var state=0;
-
+var arw=magicThingy();
+var state=arw[0];
+check();
 
 function add(){
-if(state>=0 && state<=6) {
+			if(arw[state]>=0 && arw[state]<=6) {
 
-		state++;
-		check();
-}
+					arv++;
+
+					// arw[state++];
+					check();
+			}
 
 
 }
 
 function remove(){
-if(state>=0 && state<6) {
-state--;
-check();
-wow(0);
+		if(arw[state]>=0 && arw[state]<6) {
+		// arw[state--];
+
+		arv--;
+		check();
+		
 }
 }
 
@@ -55,17 +98,17 @@ function check(){
 
 
 
-if(state==0){
+if(arw[arv]==0){
 
 	hawasChipao();
-	$('.pre').hide();
 	$('.sheet-1').show();
 	$('.sheet-1').addClass('animated slideInUp fadeIn');
 
-}
-else if(state==1) {
 
-	    $('.pre').show();
+}
+else if(arw[arv]==1) {
+
+	
 	
 	hawasChipao();
 			
@@ -74,40 +117,113 @@ else if(state==1) {
 		$('.sheet-2').show();
 		$('.sheet-2').addClass('animated slideInUp fadeIn');
 }
-else if(state==2){
+else if(arw[arv]==2){
 
 	
 	hawasChipao();
 
 		$('.sheet-3').show();
 		$('.sheet-3').addClass('animated slideInUp fadeIn');
-		wow(3);
+		
 
 }
 
-else if(state==3){
+else if(arw[arv]==3){
 
 
 	hawasChipao();
 		$('.sheet-4').show();
 		$('.sheet-4').addClass('animated slideInUp fadeIn');
 		wow(1);
-		$( ".next" ).removeClass( "trans");
+		// $( ".next" ).removeClass( "trans");
 
 }	
 
-else if(state==4){
+else if(arw[arv]==4){
 
 	hawasChipao();
 
 	
 		$('.sheet-5').show();
 		$('.sheet-5').addClass('animated slideInUp fadeIn');
-		$( ".next" ).addClass( "trans");
+		// $( ".next" ).addClass( "trans");
 
 
 
-			$(".submi").on("click",function(){
+
+
+
+}
+
+else if(state==5){
+
+	hawasChipao();
+
+
+		$('.sheet-5').hide();
+		$('.sheet-6').show();
+		$('.sheet-6').addClass('animated fadeIn');
+		// $( ".pre" ).addClass( "trans");
+		// $( ".next" ).addClass( "trans");
+		$('.side').hide();
+		$( ".next").hide();
+		$( ".pre" ).hide();
+
+}
+
+ if(arv==0){
+
+console.log("show next only");
+		$( ".next").show();
+		$( ".pre" ).hide();
+
+
+}
+
+else if(arv==4) {
+
+console.log("show pre only");
+		$( ".next").hide();
+		$( ".pre" ).show();
+
+}
+
+
+
+
+
+
+b=arv+1;
+$('.count').text(b);
+
+
+
+}
+
+// actions
+
+
+
+function hawasChipao(){
+		$('.sheet-1').hide();
+		$('.sheet-2').hide();
+		$('.sheet-3').hide();
+		$('.sheet-4').hide();
+		$('.sheet-5').hide();
+	   $('.sheet-6').hide();
+
+
+			$( ".next").show();
+		$( ".pre" ).show();
+
+		
+
+}
+
+
+// form controls 
+
+$(".submi").on("click",function(){
 
 var fname=$('#fname').val();
 var num=$('#num').val();
@@ -127,7 +243,15 @@ var num=$('#num').val();
 
 													 if($("#num").val().length==10) {
 
-													 	add();
+													 	putInfo();
+													 	hawasChipao();
+													 	$('.sheet-6').show().addClass('animated fadeIn');
+													 	$('.pre').hide();
+													 	$('.nav').hide();
+													 	$('.side').hide();
+													 	
+
+
 													 }
 													 else {
 													 	alert("please enter 10 digit number only");
@@ -142,59 +266,15 @@ var num=$('#num').val();
 			});
 
 
-}
-
-else if(state==5){
-
-	hawasChipao();
-
-		$('.sheet-4').hide();
-		$('.sheet-6').show();
-		$('.sheet-6').addClass('animated fadeIn');
-		// $( ".pre" ).addClass( "trans");
-		// $( ".next" ).addClass( "trans");
-		$('.side').hide();
-		$( ".next").hide();
-		$( ".pre" ).hide();
-
-}
 
 
 
 
-$('.count').text(state+1);
+// function wow(x){
 
-
-
-}
-
-// actions
-
-
-
-function hawasChipao(){
-		$('.sheet-1').hide();
-		$('.sheet-2').hide();
-		$('.sheet-3').hide();
-		$('.sheet-4').hide();
-		$('.sheet-5').hide();
-	   $('.sheet-6').hide();
-
-
-}
-
-
-// form controls 
-
-
-
-
-
-
-function wow(x){
 var count=0;var c=0;
 $('.option').on("click",function(){
-	
+	console.log("hello");
 	if(($(".option.selected").length<=2) || ($(".option.selected").length==0)){
 	$(this).toggleClass("selected");
 	}
@@ -202,7 +282,7 @@ $('.option').on("click",function(){
 		$(this).removeClass("selected");
 	}
 });
-}
+// }
 
 $('.optionr').on("click",function(){
 
@@ -232,6 +312,7 @@ var ref = new Firebase("https://landingwa.firebaseio.com/");
 				      Name:fname,
 				      Number:num
 				  });
+				    console.log("sent was ok");
 
 }
 
