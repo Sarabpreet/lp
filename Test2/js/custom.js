@@ -7,8 +7,6 @@
 
 
 
-
-
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -92,9 +90,6 @@ var num=$('#num').val();
 													 	$('.side').hide();
 
 
-													 	
-
-
 													 // }
 													 // else {
 													 // 	$('#message').text("Please enter a valid number(10 digit)").show().addClass("animated fadeIn");
@@ -102,9 +97,6 @@ var num=$('#num').val();
 														
 														
 										}
-
-
-			
 
 			});
 
@@ -218,7 +210,8 @@ else if(arw[arv]==4){
 		$('.sheet-5').show();
 		$('.sheet-5').addClass('animated slideInUp fadeIn');
 		// $( ".next" ).addClass( "trans");	
-		$('.nav').hide();
+		$('.next').hide();
+				$('.skip').hide();
 
 
 

@@ -195,8 +195,8 @@ function check(){
 		
 		$('.sheet-5').show();
 		$('.sheet-5').addClass('animated slideInUp fadeIn');
-		$( ".nav").hide();
-		
+		$( ".next").hide();
+		$( ".skip").hide();
 		// $( ".next" ).addClass( "trans");
 
 
