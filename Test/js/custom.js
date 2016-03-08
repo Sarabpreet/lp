@@ -1,23 +1,15 @@
-// $(".pre").hide();
-// $(".next").click(function(){
-// $(".pre").show();
-// $(".sheet-1").hide();
-// $(".sheet-2").show();
-// });
-
-
 
 
 
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
 
 
 function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
+	var currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
@@ -30,18 +22,18 @@ function shuffle(array) {
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
-  }
-  return array;
+}
+return array;
 }
 
 function magicThingy(){
 
-var arr=[0,1,2,3];
-var arr1=shuffle(arr);
-arr1.push(4)
-console.log(arr1);
+	var arr=[0,1,2,3];
+	var arr1=shuffle(arr);
+	arr1.push(4)
+	console.log(arr1);
 
-return arr1;
+	return arr1;
 
 }
 
@@ -49,7 +41,7 @@ var count=0;var c=0;
 $('.option').on("click",function(){
 	console.log("hello");
 	if(($(".option.selected").length<=2) || ($(".option.selected").length==0)){
-	$(this).toggleClass("selected");
+		$(this).toggleClass("selected");
 	}
 	else {		
 		$(this).removeClass("selected");
@@ -65,25 +57,24 @@ $('.optionr').on("click",function(){
 });
 
 $(".submi").on("click",function(){
-$('#message').hide();
-var fname=$('#fname').val();
-var num=$('#num').val();
-								
-										if(fname==""){
-													
-													$('#message').text("Please enter your name").show().addClass("animated fadeIn");
+	$('#message').hide();
+	var fname=$('#fname').val();
+	var num=$('#num').val();
+	
+	if(fname==""){
+		
+		$('#message').text("Please enter your name").show().addClass("animated fadeIn");
 
-										} 
-										else if(num=="") {
-												
-														$('#message').text("Please enter soemthing?").show().addClass("animated fadeIn");
-											
+	} 
+	else if(num=="") {
+		
+		$('#message').text("Please enter soemthing?").show().addClass("animated fadeIn");
+		
 
-										}
-										else {
+	}
+	else {
 
-													 // if($("#num").val().length==10) {
-													 
+													 	
 													 	putInfo();
 													 	hawasChipao();
 													 	$('.sheet-6').show().addClass('animated fadeIn');
@@ -92,42 +83,35 @@ var num=$('#num').val();
 													 	$('.side').hide();
 
 
-													 	
+											
+													 
+													}
 
 
-													 // }
-													 // else {
-													 // 	$('#message').text("Please enter a valid number(10 digit)").show().addClass("animated fadeIn");
-													 // }
-														
-														
-										}
+													
 
-
-			
-
-			});
+												});
 
 
 
 var arv=0;
 
 $('.pre').on("click",function(){
-remove();
+	remove();
 // console.log(state);
 });
 
 
 $('.next').on("click",function(){
 
-add();
+	add();
 
 // console.log(state);
 
 });
 $('.skip a').on("click",function(){
 
-add();
+	add();
 
 // console.log(state);
 
@@ -137,25 +121,25 @@ var state=arw[0];
 check();
 
 function add(){
-			if(arw[state]>=0 && arw[state]<=6) {
+	if(arw[state]>=0 && arw[state]<=6) {
 
-					arv++;
+		arv++;
 
 					// arw[state++];
 					check();
+				}
+
+
 			}
 
-
-}
-
-function remove(){
-		if(arw[state]>=0 && arw[state]<6) {
+			function remove(){
+				if(arw[state]>=0 && arw[state]<6) {
 		// arw[state--];
 
 		arv--;
 		check();
 		
-}
+	}
 }
 
 
@@ -163,54 +147,56 @@ function check(){
 
 
 
-if(arw[arv]==0){
+	if(arw[arv]==0){
 
-	hawasChipao();
-	$('.sheet-1').show();
-	$('.sheet-1').addClass('animated slideInUp fadeIn');
+		hawasChipao();
+		$('.sheet-1').show();
+		$('.sheet-1').addClass('animated slideInUp fadeIn');
 
 
-}
-else if(arw[arv]==1) {
+	}
+	else if(arw[arv]==1) {
 
-	
-	
-	hawasChipao();
-			
+		
+		
+		hawasChipao();
+		
 
 
 		$('.sheet-2').show();
 		$('.sheet-2').addClass('animated slideInUp fadeIn');
-}
-else if(arw[arv]==2){
+	}
+	else if(arw[arv]==2){
 
-	
-	hawasChipao();
+		
+		hawasChipao();
 
 		$('.sheet-3').show();
 		$('.sheet-3').addClass('animated slideInUp fadeIn');
 		
 
-}
+	}
 
-else if(arw[arv]==3){
+	else if(arw[arv]==3){
 
 
-	hawasChipao();
+		hawasChipao();
 		$('.sheet-4').show();
 		$('.sheet-4').addClass('animated slideInUp fadeIn');
 
 		// $( ".next" ).removeClass( "trans");
 
-}	
+	}	
 
-else if(arw[arv]==4){
+	else if(arw[arv]==4){
 
-	hawasChipao();
+		hawasChipao();
 
-	
+		
 		$('.sheet-5').show();
 		$('.sheet-5').addClass('animated slideInUp fadeIn');
+		$( ".nav").hide();
+		
 		// $( ".next" ).addClass( "trans");
 
 
@@ -218,11 +204,11 @@ else if(arw[arv]==4){
 
 
 
-}
+	}
 
-else if(state==5){
+	else if(state==5){
 
-	hawasChipao();
+		hawasChipao();
 
 
 		$('.sheet-5').hide();
@@ -234,32 +220,32 @@ else if(state==5){
 		$( ".next").hide();
 		$( ".pre" ).hide();
 
-}
+	}
 
- if(arv==0){
+	if(arv==0){
 
-console.log("show next only");
+		console.log("show next only");
 		$( ".next").show();
 		$( ".pre" ).hide();
 
 
-}
+	}
 
-else if(arv==4) {
+	else if(arv==4) {
 
-console.log("show pre only");
+		console.log("show pre only");
 		$( ".next").hide();
 		$( ".pre" ).show();
 
-}
+	}
 
 
 
 
 
 
-b=arv+1;
-$('.count').text(b);
+	b=arv+1;
+	$('.count').text(b);
 
 
 
@@ -270,18 +256,18 @@ $('.count').text(b);
 
 
 function hawasChipao(){
-		$('.sheet-1').hide();
-		$('.sheet-2').hide();
-		$('.sheet-3').hide();
-		$('.sheet-4').hide();
-		$('.sheet-5').hide();
-	   $('.sheet-6').hide();
+	$('.sheet-1').hide();
+	$('.sheet-2').hide();
+	$('.sheet-3').hide();
+	$('.sheet-4').hide();
+	$('.sheet-5').hide();
+	$('.sheet-6').hide();
 
 
-			$( ".next").show();
-		$( ".pre" ).show();
+	$( ".next").show();
+	$( ".pre" ).show();
 
-		
+	
 
 }
 
@@ -302,35 +288,35 @@ function hawasChipao(){
 
 function putInfo(){
 
-var bud=$('#sli').val();
-var age=$('#veh').val();
-var imp=$('.option.selected').text();
-var type=$('.optionr.selected').text();
-var fname=$('#fname').val();
-var num=$('#num').val();
-var ref = new Firebase("https://landingwa.firebaseio.com/testing1");
+	var bud=$('#sli').val();
+	var age=$('#veh').val();
+	var imp=$('.option.selected').text();
+	var type=$('.optionr.selected').text();
+	var fname=$('#fname').val();
+	var num=$('#num').val();
+	var ref = new Firebase("https://landingwa.firebaseio.com/testing1");
 
-				    ref.push({
-				      Budget: bud,
-				      Age: age,
-				      Important:imp,
-				      Type:type,
-				      Name:fname,
-				      Number:num,
-				      timestamp:Firebase.ServerValue.TIMESTAMP
-				  });
-				    console.log("sent was ok");
+	ref.push({
+		Budget: bud,
+		Age: age,
+		Important:imp,
+		Type:type,
+		Name:fname,
+		Number:num,
+		timestamp:Firebase.ServerValue.TIMESTAMP
+	});
+	console.log("sent was ok");
 
 }
 
 $("#sli").on("input change", function() {
- 
- $('.fd').text(shitGotReal($("#sli").val()));
+	
+	$('.fd').text(shitGotReal($("#sli").val()));
 
 });
 
 function shitGotReal(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 
