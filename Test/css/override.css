@@ -532,6 +532,7 @@ color: #FFFFFF;
 
 
   
+  /*! background: green; */
 }
   .three {
   }
@@ -550,26 +551,28 @@ color: #FFFFFF;
     z-index: 999;
 }
 
+
 .next{
     display: block;
-    background: url("../img/next-m.png") no-repeat;
+    background: url("../img/next-m.png") center right no-repeat;
     float:right;
     height:16px;
-    margin-top:-8px;
-
+    margin-top:-10px;
+    padding: 12px 56px;
+ 
 }
 
 
 .pre{
     display: block;
-    background: url("../img/pre-m.png") no-repeat;
+   background: url("../img/pre-m.png") center left no-repeat;
     float:left;
     height: 16px;
     margin-top: -8px;
      width: 55px;
-
+    padding: 12px 66px;
+margin-top: -10px;
   }
-
 
 
 .feedback {
